@@ -7,8 +7,8 @@ let level = 0;
 
 let h2 = document.querySelector("h2");
 
-/* START GAME ON CLICK / TAP (MOBILE + DESKTOP) */
-document.addEventListener("click", function () {
+
+document.addEventListener("pointerdown", function () {
   if (started === false) {
     console.log("Game Started");
     started = true;
@@ -35,7 +35,7 @@ function levelUp() {
   level++;
   h2.innerText = `Level ${level}`;
 
-  // FIXED RANDOM INDEX (0–3)
+  
   let randIdx = Math.floor(Math.random() * 4);
   let randColor = btns[randIdx];
   let randBtn = document.querySelector(`.${randColor}`);
@@ -75,7 +75,7 @@ function btnPress() {
 
 let allBtns = document.querySelectorAll(".btn");
 for (let btn of allBtns) {
-  btn.addEventListener("click", btnPress);
+  btn.addEventListener("pointerdown", btnPress);
 }
 
 function reset() {
