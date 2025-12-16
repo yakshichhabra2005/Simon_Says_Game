@@ -11,7 +11,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* BUTTON STYLING */
+
 .btn {
   height: 180px;
   width: 180px;
@@ -21,14 +21,14 @@ h2 {
   touch-action: manipulation;
 }
 
-/* CONTAINER */
+
 .btn-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* COLORS */
+
 .yellow {
   background-color: rgb(236, 236, 145);
 }
@@ -45,7 +45,7 @@ h2 {
   background-color: rgb(252, 171, 252);
 }
 
-/* FLASH EFFECTS */
+
 .flash {
   background-color: white;
 }
@@ -54,7 +54,7 @@ h2 {
   background-color: green;
 }
 
-/* 📱 MOBILE RESPONSIVE */
+
 @media (max-width: 600px) {
   .btn {
     height: 120px;
